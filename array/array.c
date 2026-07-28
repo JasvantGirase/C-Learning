@@ -640,3 +640,177 @@
 
 //     return 0;
 // }
+
+//ex29 check how much elements are 
+//repeated there how many times
+// #include <stdio.h>
+
+// int main()
+// {
+//     int arr[] = {1, 2, 3, 1, 2, 3, 4, 5, 6, 7};
+//     int size = sizeof(arr) / sizeof(arr[0]);
+
+//     for (int i = 0; i < size; i++)
+//     {
+//         int c = 0;
+//         int visited = 0;
+
+//         // Check if the current element has already been processed
+//         for (int k = 0; k < i; k++)
+//         {
+//             if (arr[i] == arr[k])
+//             {
+//                 visited = 1;
+//                 break;
+//             }
+//         }
+
+//         // If already processed, skip it
+//         if (visited)
+//         {
+//             continue;
+//         }
+
+//         // Count duplicates after the current element
+//         for (int j = i + 1; j < size; j++)
+//         {
+//             if (arr[i] == arr[j])
+//             {
+//                 c++;
+//             }
+//         }
+
+//         if (c > 0)
+//         {
+//             printf("%d element found %d extra time(s)\n", arr[i], c);
+//         }
+//     }
+
+//     return 0;
+// }
+
+// ex30
+
+// print array by usig recursion
+// #include <stdio.h>
+
+// void display(int arr[10], int index)
+// {
+//     // Base condition
+//     if (index == 10)
+//     {
+//         return;
+//     }
+
+//     printf("%d ", arr[index]);
+//     display(arr, index + 1); // Recursive call
+// }
+
+// int main()
+// {
+//     int arr[10] = {2, 3, 4, 1, 5, 6, 0, 9, 8, 7};
+
+//     display(arr, 0);
+
+//     return 0;
+// }
+
+
+//ex31
+
+//check diagonal element and print sum of diagonal element
+// #include <stdio.h>
+
+// int main()
+// {
+//     int a[3][3];
+//     int sum = 0;
+
+//     printf("Enter 3x3 matrix elements:\n");
+
+//     // Input
+//     for (int i = 0; i < 3; i++)
+//     {
+//         for (int j = 0; j < 3; j++)
+//         {
+//             scanf("%d", &a[i][j]);
+//         }
+//     }
+
+//     printf("\nDiagonal elements are:\n");
+
+//     // Diagonal + sum
+//     for (int i = 0; i < 3; i++)
+//     {
+//         for (int j = 0; j < 3; j++)
+//         {
+//             if (i == j)
+//             {
+//                 printf("%d ", a[i][j]);
+//                 sum = sum + a[i][j];
+//             }
+//         }
+//     }
+
+//     printf("\nSum of diagonal elements is: %d\n", sum);
+
+//     return 0;
+// }
+
+
+
+//ex31
+//check whether matrix is identical or not
+// #include <stdio.h>
+
+// int main()
+// {
+//     int a[3][3];
+//     int f = 0;
+
+//     printf("Enter 3x3 matrix elements:\n");
+
+//     // Input matrix
+//     for (int i = 0; i < 3; i++)
+//     {
+//         for (int j = 0; j < 3; j++)
+//         {
+//             scanf("%d", &a[i][j]);
+//         }
+//     }
+
+//     // Check Identity Matrix
+//     for (int i = 0; i < 3 && f == 0; i++)
+//     {
+//         for (int j = 0; j < 3; j++)
+//         {
+//             if (i == j)
+//             {
+//                 if (a[i][j] != 1)
+//                 {
+//                     f = 1;
+//                     break;
+//                 }
+//             }
+//             else
+//             {
+//                 if (a[i][j] != 0)
+//                 {
+//                     f = 1;
+//                     break;
+//                 }
+//             }
+//         }
+//     }
+
+//     if (f == 0)
+//     {
+//         printf("Matrix is an Identity Matrix.\n");
+//     }
+//     else
+//     {
+//         printf("Matrix is NOT an Identity Matrix.\n");
+//     }
+
+//     return 0;
+// }
