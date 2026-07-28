@@ -381,3 +381,25 @@
 
 //     return 0;
 // }
+
+
+//ex19
+//sorting of string in asc or desc form
+// #include<stdio.h>
+// int main()
+// {
+//       char str[]="techno";
+// for(int i=0;str[i]!= '\0';i++)
+// {
+// for(int j=i; str[j]!= '\0';j++)
+// {
+// if(str[i]>str[j])
+// {
+// char temp=str[i];
+// str[i]=str[j];
+// str[j]=temp;
+// }
+// }
+// }
+// printf("%s",str);
+// }
