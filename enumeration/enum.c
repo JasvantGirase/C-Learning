@@ -42,7 +42,6 @@
 
 //ex3
 // #include <stdio.h>
-
 // enum Color
 // {
 //     RED = 10,
