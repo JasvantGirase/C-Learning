@@ -195,7 +195,7 @@
 //     {
 //         for (j = i + 1; j < 10; j++)
 //         {
-//             if (arr[i] < arr[j])//for ascending just change this
+//             if (arr[i] < arr[j])// desc//for ascending just change this
 //             {
 //                 int temp = arr[i];
 //                 arr[i] = arr[j];
